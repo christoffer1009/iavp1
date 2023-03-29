@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["import { TreeNode } from \"./TreeNode\";\nimport { encontra } from \"./algoritmo\";\nimport { encontraOLD } from \"./algoritmoOLD\";\n\n\nconst a = new TreeNode(\"a\");\nconst b = new TreeNode(\"b\");\nconst c = new TreeNode(\"c\");\nconst d = new TreeNode(\"d\");\nconst e = new TreeNode(\"e\");\nconst f = new TreeNode(\"f\");\nconst g = new TreeNode(\"g\");\nconst h = new TreeNode(\"h\");\nconst i = new TreeNode(\"i\");\n\na.adicionaFilho(b);\na.adicionaFilho(c);\na.adicionaFilho(d);\n\nb.adicionaFilho(e);\nb.adicionaFilho(f);\n\nc.adicionaFilho(f);\nc.adicionaFilho(g);\n\ne.adicionaFilho(h);\ne.adicionaFilho(i);\n\n//         A\n//    B    C    D\n//  E    F   G\n//H  I\n//\n//\n\nconst res = encontra(a, 'g');\nconsole.log(res)\n"],
+  "mappings": ";AAAA,sBAAyB;AACzB,uBAAyB;AAIzB,MAAM,IAAI,IAAI,yBAAS,GAAG;AAC1B,MAAM,IAAI,IAAI,yBAAS,GAAG;AAC1B,MAAM,IAAI,IAAI,yBAAS,GAAG;AAC1B,MAAM,IAAI,IAAI,yBAAS,GAAG;AAC1B,MAAM,IAAI,IAAI,yBAAS,GAAG;AAC1B,MAAM,IAAI,IAAI,yBAAS,GAAG;AAC1B,MAAM,IAAI,IAAI,yBAAS,GAAG;AAC1B,MAAM,IAAI,IAAI,yBAAS,GAAG;AAC1B,MAAM,IAAI,IAAI,yBAAS,GAAG;AAE1B,EAAE,cAAc,CAAC;AACjB,EAAE,cAAc,CAAC;AACjB,EAAE,cAAc,CAAC;AAEjB,EAAE,cAAc,CAAC;AACjB,EAAE,cAAc,CAAC;AAEjB,EAAE,cAAc,CAAC;AACjB,EAAE,cAAc,CAAC;AAEjB,EAAE,cAAc,CAAC;AACjB,EAAE,cAAc,CAAC;AASjB,MAAM,UAAM,2BAAS,GAAG,GAAG;AAC3B,QAAQ,IAAI,GAAG;",
+  "names": []
+}

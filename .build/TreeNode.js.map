@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../TreeNode.ts"],
+  "sourcesContent": ["export class TreeNode {\n  id: string;\n  filhos: TreeNode[] = [];\n\n  constructor(id: string) {\n    this.id = id;\n  }\n\n  adicionaFilho(n: TreeNode) {\n    this.filhos.push(n);\n  }\n\n  removeFilho(id: string) {\n    this.filhos = this.filhos.filter((x) => x.id != id);\n  }\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAO,MAAM,SAAS;AAAA,EACpB;AAAA,EACA,SAAqB,CAAC;AAAA,EAEtB,YAAY,IAAY;AACtB,SAAK,KAAK;AAAA,EACZ;AAAA,EAEA,cAAc,GAAa;AACzB,SAAK,OAAO,KAAK,CAAC;AAAA,EACpB;AAAA,EAEA,YAAY,IAAY;AACtB,SAAK,SAAS,KAAK,OAAO,OAAO,CAAC,MAAM,EAAE,MAAM,EAAE;AAAA,EACpD;AACF;",
+  "names": []
+}
