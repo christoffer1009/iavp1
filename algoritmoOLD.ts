@@ -1,3 +1,5 @@
+// ********** DESCONSIDERAR **********
+
 import { TreeNode } from "./TreeNode";
 
 export const encontra = (n: TreeNode, objetivo: string): TreeNode[] => {

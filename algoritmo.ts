@@ -5,7 +5,6 @@ export const encontra = (inicial: TreeNode, objetivo: string): TreeNode[] => {
   const le: TreeNode[] = [];
   const bss: TreeNode[] = [];
 
-
   type passo = {
     passo: number;
     lne: string[];
@@ -13,9 +12,10 @@ export const encontra = (inicial: TreeNode, objetivo: string): TreeNode[] => {
     bss: string[];
     ec: string;
   };
+  
   const passos: passo[] = [];
   let count = 0;
-
+  
   //inicio
   let ec: TreeNode = inicial;
   le.push(ec);
@@ -43,7 +43,6 @@ export const encontra = (inicial: TreeNode, objetivo: string): TreeNode[] => {
         lne.shift()
         le.shift()
         ec = lne[0]
-        // console.log('aqui2', lne.length, le.length)
       }
       if(ec)
         le.unshift(ec)
