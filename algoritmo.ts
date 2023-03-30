@@ -1,6 +1,6 @@
 import { TreeNode } from "./TreeNode";
 
-export const encontra = (inicial: TreeNode, objetivo: string): TreeNode[] => {
+export const encontra = (inicial: TreeNode, objetivo: string) => {
   const lne: TreeNode[] = [];
   const le: TreeNode[] = [];
   const bss: TreeNode[] = [];
@@ -12,10 +12,10 @@ export const encontra = (inicial: TreeNode, objetivo: string): TreeNode[] => {
     bss: string[];
     ec: string;
   };
-  
+
   const passos: passo[] = [];
   let count = 0;
-  
+
   //inicio
   let ec: TreeNode = inicial;
   le.push(ec);
@@ -44,8 +44,8 @@ export const encontra = (inicial: TreeNode, objetivo: string): TreeNode[] => {
         le.shift()
         ec = lne[0]
       }
-      if(ec)
-        le.unshift(ec)
+  
+      le.unshift(ec)
     } else {
       temp.forEach(x => lne.unshift(x))
       ec = lne[0]
@@ -54,6 +54,5 @@ export const encontra = (inicial: TreeNode, objetivo: string): TreeNode[] => {
 
     count++
   }
-  console.log("FALHA\n", passos)
-  return le
+  console.log("FALHA\n")
 }

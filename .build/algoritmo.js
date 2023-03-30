@@ -50,8 +50,7 @@ const encontra = (inicial, objetivo) => {
         le.shift();
         ec = lne[0];
       }
-      if (ec)
-        le.unshift(ec);
+      le.unshift(ec);
     } else {
       temp.forEach((x) => lne.unshift(x));
       ec = lne[0];
@@ -59,8 +58,7 @@ const encontra = (inicial, objetivo) => {
     }
     count++;
   }
-  console.log("FALHA\n", passos);
-  return le;
+  console.log("FALHA\n");
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
